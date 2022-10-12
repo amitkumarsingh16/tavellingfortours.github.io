@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-image: url(images/header-bg.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-content{
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.header-content h2{
+    font-size: 4vmin;
+
+}
+.line{
+    width: 150px;
+    background-color: crimson;
+    height: 4px;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036f;
+    border-radius: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+    /* ....................navbar.................... */
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+
+}
+.nav-links li{
+     margin: 0 30px;
+}
+
+.linkcolor{
+    color: whitesmoke;
+
+}
+ 
+
+
+/* ......***..............section...................*** */
+ 
+ 
+
+
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    color: #49497e;
+    font-size: 4vmin;
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+         
+
+}
+img{
+    width: 80%;
+}
+.row .col {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    
+}
+.events .row{
+    margin-top: 50px;
+
+}
+h4{
+    font-size: 4vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+
+}
+.events .ctn{
+    margin-top: 30px;
+}
+
+
+
+
+/* 
+......................section - explore.......................  */
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: whitesmoke;
+   
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+
+/* .......................section-tours........................ */
+
+    
+
+.content-col{
+    width: 40%;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 20px auto;
+}
+.content-col .ctn{
+    margin-left: px;
+}
+.image-col{
+    width: 60%;
+} 
+
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+.image-gallery img {
+    max-width: 280px;
+    margin: 10px;
+}
+/* .....................footer........................... */
+
+.footer{
+    margin: 0;
+    padding: 20px 80px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #484872;
+    text-align: center;
+}
+.footer p{
+    margin: 20px auto;
+    color: whitesmoke;
+}
+
+
+
+/* ..................mobile device........................... */
+
+
+@media only screen and (max-width: 850px){
+
+
+
+.menu-btn{
+    display: block;
+}
+.navbar{
+     padding: 0px;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.nav-links{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(61, 61, 107);
+    margin-top: -900px;
+    transition: all 0.5s ease;
+
+}
+.mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+}
+.nav-links li{
+    margin: 30px auto;
+}
+   /* Events ........responsive*/
+   .row{
+    flex-direction: column;
+}
+.row .col{
+    margin: 20px auto;
+}
+.col img{
+    max-width: 90%;
+}
+
+
+
+/* ....Explore... responsive.. */
+.explore-content{
+    width: 100%;
+
+}
+.tours .col{
+    width: 100%;
+
+}
+.image-gallery{
+    justify-content: center;
+    align-items: center;
+}
+.image-gallery img{
+    width: 90%;
+}
+.footer{
+    padding: 10px;
+}
+}
+
+/* .......Animations......... */
+img{
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    color: #fc036f;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(13, 11, 11, 0.158);
+}
+li:hover{
+    cursor: pointer;
+    color: #fc036f;
+}
